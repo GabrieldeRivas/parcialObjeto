@@ -6,3 +6,14 @@ test "menta 1700" {
     assert.that(menta1700.daNuevasSemillas())
     assert.equals(menta1700.espacioOcupado(), 3)
 }
+
+test "soja 2009"  {
+    const soja1 = new Soja(altura = 0.6, anioObtencion = 2009)
+    assert.notThat(soja1.daNuevasSemillas())
+    assert.equals(soja1.espacioOcupado(), 0.3)
+}
+
+test "quinoa 2010" {
+	const quinoa1 = new Quinoa(horasQueTolera = 12, anioObtencion = 2010, altura = 1)
+	assert.that(quinoa1.daNuevasSemillas())
+}
