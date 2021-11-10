@@ -1,0 +1,8 @@
+import planta.*
+import parcela.*
+
+test "menta 1700" {
+    const menta1700 = new Menta(altura = 1, anioObtencion = 1700)
+    assert.that(menta1700.daNuevasSemillas())
+    assert.equals(menta1700.espacioOcupado(), 3)
+}
